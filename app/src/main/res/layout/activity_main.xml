@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/sginin_backgroung"
+    >
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="casual"
+        android:text="Resturant app"
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="172dp"
+        android:fontFamily="casual"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="Already have an acount?"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_logo" />
+
+    <EditText
+        android:id="@+id/EditText_usernameInRegisterPage"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/custom_login_inputs"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:ems="10"
+        android:hint="Username"
+        android:drawablePadding="12dp"
+
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/EditText_passwordInRegisterPage"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_login_inputs"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:ems="10"
+        android:drawablePadding="12dp"
+
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/EditText_usernameInRegisterPage"
+        app:layout_constraintStart_toStartOf="@+id/EditText_usernameInRegisterPage"
+        app:layout_constraintTop_toBottomOf="@+id/EditText_usernameInRegisterPage"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/EditText_conformPasswordInRegisterPage"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_login_inputs"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:ems="10"
+        android:drawablePadding="12dp"
+
+        android:hint="Conform Password"
+        android:inputType="textPassword"
+        android:padding="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/EditText_passwordInRegisterPage"
+        app:layout_constraintStart_toStartOf="@+id/EditText_passwordInRegisterPage"
+        app:layout_constraintTop_toBottomOf="@+id/EditText_passwordInRegisterPage"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upload_logo"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_theme"
+        app:layout_constraintEnd_toEndOf="@+id/EditText_conformPasswordInRegisterPage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EditText_conformPasswordInRegisterPage"
+        app:layout_constraintTop_toBottomOf="@+id/EditText_conformPasswordInRegisterPage">
+
+        <TextView
+            android:id="@+id/TEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sgin up"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_signinInRegisterPage"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="5dp"
+
+        android:background="@drawable/button_theme"
+        android:text="Sign in"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

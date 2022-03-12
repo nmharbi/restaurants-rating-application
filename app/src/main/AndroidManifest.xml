@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.swe483restruntproject" >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Swe483RestruntProject" >
+        
+        
+        <activity
+            android:name=".editRestOptions.addPhotos"
+            android:exported="false" />
+        <activity
+            android:name=".editRestOptions.AddMenuItem"
+            android:exported="false" />
+        <activity
+            android:name=".editRestOptions.editRestLogo"
+            android:exported="false" />
+        <activity
+            android:name=".editRestOptions.editRestDec"
+            android:exported="false" />
+        <activity
+            android:name=".editRestOptions.editRestName"
+            android:exported="false" />
+        <activity
+            android:name=".editRestOptions.EditRest"
+            android:exported="false" />
+        <activity
+            android:name=".reviews"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".AddRestrunt"
+            android:exported="false" />
+        <activity
+            android:name=".RestruntDescrption"
+            android:exported="true" />
+        <activity
+            android:name=".StartPage"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".homePage"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

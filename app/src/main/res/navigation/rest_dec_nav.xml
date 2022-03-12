@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rest_dec_nav"
+    app:startDestination="@id/rest_food_menu">
+
+    <fragment
+        android:id="@+id/rest_food_menu"
+        android:name="com.example.swe483restruntproject.decFragments.rest_food_menu"
+        android:label="fragment_rest_food_menu_list"
+        tools:layout="@layout/fragment_rest_food_menu_list" />
+    <fragment
+        android:id="@+id/rest_photos_Fragment"
+        android:name="com.example.swe483restruntproject.decFragments.rest_photos_Fragment"
+        android:label="fragment_rest_photos__list"
+        tools:layout="@layout/fragment_rest_photos__list" />
+    <fragment
+        android:id="@+id/rest_location_Fragment"
+        android:name="com.example.swe483restruntproject.decFragments.BlankFragment"
+        android:label="rest_location_fragment"
+        tools:layout="@layout/rest_location_fragment" />
+</navigation>

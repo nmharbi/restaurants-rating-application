@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Menu" android:id="@+id/rest_food_menu"/>
+    <item android:title="Photos" android:id="@+id/rest_photos_Fragment"/>
+    <item android:title="Location" android:id="@+id/rest_location_Fragment"/>
+</menu>

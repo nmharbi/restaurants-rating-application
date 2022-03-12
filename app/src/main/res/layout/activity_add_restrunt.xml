@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRestrunt"
+    android:background="@drawable/start_page_background"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_restruntButton"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_theme"
+        app:layout_constraintEnd_toEndOf="@+id/upload_logo"
+        app:layout_constraintStart_toStartOf="@+id/upload_logo"
+        app:layout_constraintTop_toBottomOf="@+id/upload_logo">
+
+        <TextView
+            android:id="@+id/TEdX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Restrunt"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text=" Add your Resturant "
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_restnameInAddPage"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_login_inputs"
+        android:drawableLeft="@drawable/ic_baseline_house_siding_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Restrunt Name"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editText_desInAddPage"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/custom_login_inputs"
+        android:drawableLeft="@drawable/ic_baseline_description_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Restrunt Description"
+        android:inputType="textMultiLine"
+        android:padding="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upload_logo"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_theme"
+        app:layout_constraintStart_toStartOf="@+id/editText_desInAddPage"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <TextView
+            android:id="@+id/TEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Logo"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/added_label"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/upload_logo"
+        app:layout_constraintEnd_toEndOf="@+id/upload_logo"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/upload_logo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <RadioButton
+            android:id="@+id/arabic_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Arabic"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/burger_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="burgers"
+            android:textColor="@color/white"
+
+            />
+
+        <RadioButton
+            android:id="@+id/pizza_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="pizza"
+            android:textColor="@color/white"
+
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="specilty:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_desInAddPage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
